@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  cbrepocmvc:
+    image: ${DOCKER_REGISTRY}cbrepocmvc
+    build:
+      context: .
+      dockerfile: CBREPOCMVC\Dockerfile
