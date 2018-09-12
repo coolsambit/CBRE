@@ -1,0 +1,31 @@
+$cbre-login-ctn: #d6e3df;
+$cbre-green: #006a4d;
+$cbre-lime-green: #69be28;
+$cbre-charcoal: #3a3a3a;
+$input-border: #979797;
+$login-btn: #004b35;
+$white: #ffffff;
+$off-white: #f4f4f4;
+
+@font-face {
+    font-family: 'futura_hv';
+    src: url('../../assets/fonts/futura-pt-hv.ttf');
+    src: url('../../assets/fonts/futura-pt-hv.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'futura-md';
+    src: url('../../assets/fonts/futura-pt-md.ttf'); 
+    src: url('../../assets/fonts/futura-pt-md.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'futura-bk';
+    src: url('../../assets/fonts/futura-pt-bk.ttf');
+    src: url('../../assets/fonts/futura-pt-bk.ttf') format('truetype');
+}
+
+input:focus {
+    outline: 0px !important;
+    -webkit-appearance: none;
+}

@@ -1,0 +1,142 @@
+
+html,body {
+    height: 100%;
+}
+
+.dashboard-ctn {
+    background-color: $off-white;
+
+    .container {
+        height: 100%;
+        position: relative;
+    }
+
+    .panel  {
+        width: 335px;
+        height: 100%;
+        background-color: $white;
+
+        .panel-div {
+            height: 100%;
+            padding: 5% 5% 0 10%;
+        }
+    }
+
+    .cbre-logo-row {
+        margin-top: 14%;
+
+        span:nth-child(1) {
+            font-family: 'futura_hv', sans-serif;
+            font-size: 28px;
+            color: $cbre-green;
+            font-weight: 900;
+        }
+
+        span:nth-child(2n) {
+            font-family: 'futura_md', sans-serif;
+            font-size: 28px;
+            color: $cbre-lime-green;
+            font-weight: 500;
+        }
+    }
+
+    .user-img-row {
+        margin-top: 15%;
+
+        .user-img {
+            height: 58px;
+            width: 58px;
+        }
+    }
+
+    .user-name {
+        margin-top: 3%;
+        font-family: 'futura-hv', sans-serif;
+        color: $cbre-charcoal;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+
+    .custom-msg {
+        margin-top: 5%;
+        font-family: 'futura-bk', sans-serif;
+        color: $cbre-charcoal;
+        font-size: 18px;
+    }
+
+    .panel-links {
+        font-family: 'futura-md', sans-serif;
+        color: $cbre-charcoal;
+        font-size: 17px;
+        text-transform: uppercase;
+        margin-top: 15%;
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            cursor: pointer;
+
+            li {
+                padding-bottom: 5%;
+                
+                a {
+                    text-decoration: none;
+                }
+            }
+
+            span {
+                padding-left: 5%;
+            }
+        }
+    }
+
+    .app-info-panel {
+        position: absolute;
+        height: 100%;
+        width: 335px;
+        transition: 1.5s;
+        left: -335px;
+        background-color: $white;
+
+        .app-info-panel-div {
+            height: 100%;
+            padding: 5% 5% 0 10%;
+        }
+    }
+
+    .app-info-title {
+        font-family: "futura-hv", sans-serif;
+        font-size: 18px;
+        color: $cbre-charcoal;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+    .app-info {
+        font-family: "futura-bk", sans-serif;
+        font-size: 18px;
+        color: $cbre-charcoal;
+        font-weight: 900;
+        margin-top: 5%;       
+    }
+
+    .app-info-title {
+        margin-top: 14%;
+    }
+
+    .app-list-row {
+        ul.app-list {
+            list-style-type: none;
+            padding-left: 0;
+            font-family: "futura-bk", sans-serif;
+            font-size: 18px;
+            color: $cbre-charcoal;
+            font-weight: normal;
+
+            li {
+                padding: 5% 0 5% 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,260 @@
+/*
+ Style Sheet for LOGIN SCREEN 
+*/
+
+.login-ctn {
+    background-color: $cbre-login-ctn;
+    //overflow: hidden;
+
+    .container {
+        position: relative;
+
+        .main-row {
+            position: absolute;
+            width: 100%;
+            margin-top: 10%;
+            height: 500px;
+            left: 0%;
+        }
+    }
+
+    .user-info {
+        background-color: $white;
+        position: relative;
+
+        .row-grp {
+            position: absolute;
+            top: 15%;
+            left: 15%;
+        }
+    }
+
+    .cbre-logo-row {
+        span:nth-child(1) {
+            font-family: 'futura_hv', sans-serif;
+            font-size: 34px;
+            color: $cbre-green;
+        }
+
+        span:nth-child(2n) {
+            font-family: 'futura_md', sans-serif;
+            font-size: 34px;
+            color: $cbre-lime-green;
+        }
+    }
+
+    .login-txt-row {
+        font-family: 'futura-bk', sans-serif;
+        font-size: 14px;
+        color: $cbre-charcoal;
+        padding-top: 2%;
+    }
+
+    .usr-name-row, 
+    .usr-pwd-row {
+        padding-top: 50px;
+
+        div {
+            border-bottom: 1px solid $input-border;
+            height: 30px;
+        }
+        
+        .usr-name-input, 
+        .usr-pwd-input {
+            border: none;
+            width: 90%;
+            padding-left: 10px;
+        }
+    }
+
+    .login-btn-row {
+        padding-top: 50px;
+
+        .login-btn {
+            height: 56px;
+            color: $white;
+            width: 156px;
+            border-radius: 3px;
+            background: $login-btn;
+        }
+    }
+
+    .login-img {
+        padding-left: 0;
+        img {
+            width: 600px;
+            height: 500px;
+        }
+    }
+}
+
+/* Tablet Screen Landscape */ 
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+.login-ctn {
+
+    .container {
+        .main-row {
+            margin-top: 9%;  
+            left: -0.5%;        
+        }
+    }
+
+    .user-info {
+        position: relative;
+        left: 0%;
+        height: 600px;
+
+        .row-grp {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+        }
+    }
+
+    .login-img {
+        img {
+            width: 520px;
+            height: 600px;
+        }
+    }
+}
+}
+
+/* Tablet Screen Portrait */ 
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait),
+(min-width: 801px) and (max-width: 991px) {
+    .login-ctn {
+        .container {
+            .main-row {
+                position: absolute;
+                margin-top: 2%;    
+                height: 500px;  
+                left: 2%;    
+            }
+        }
+    
+        .user-info {
+            position: relative;
+            left: 0%;
+            height: 490px;
+        }
+    
+        .login-img {
+            position: relative;
+            margin-top: 0%;
+            img {
+                width: 718px;
+                height: 505px;
+            }
+        }
+    }
+}
+
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .col-lg-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .col-md-10 {
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+
+    .login-ctn {
+        .user-info {
+            height: 630px;
+
+            .row-grp {
+                left: 10%;
+            }
+        }
+
+        .login-img {
+            img {
+                height: 700px;
+                width: 960px;
+            }
+        }
+    }
+}
+
+/* iPhone Mobile Screen Portrait */
+// @media only screen and (device-width: 375px) and (device-height: 812px) and (orientation: portrait),
+// (device-width: 414px) and (device-height: 736px) and (orientation: portrait),
+// (device-width: 375px) and (device-height: 667px) and (orientation: portrait) {
+@media screen and (min-width: 100px) and (max-width: 767px) and (orientation: portrait),
+only screen and (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
+    .login-ctn {
+        position: relative;
+        background-color: $white;
+        overflow: auto;
+
+        .container {
+            .main-row {
+                width: 90%;
+                left: 5%;
+            }
+        }
+
+        .user-info {
+            position: absolute;
+            top: 30%;
+
+            .row-grp {
+                left: 4%;
+            }
+        }
+
+        .login-btn-row {
+            text-align: center;
+        }
+
+        .login-img {
+            display: none;
+        }
+    }
+}
+
+/* iPhone Mobile Screen Landscape */
+// @media only screen and (device-width: 812px) and (device-height: 375px) and (orientation: landscape),
+// (device-width: 736px) and (device-height: 414px) and (orientation: landscape),
+// (device-width: 667px) and (device-height: 375px) and (orientation: landscape) 
+@media screen and (min-width: 100px) and (max-width: 767px) and (orientation: landscape),
+only screen and (device-width: 812px) and (device-height: 375px) and (orientation: landscape){
+    .login-ctn {
+        position: relative;
+        background-color: $white;
+        overflow: auto;
+
+        .container {
+            .main-row {
+                width: 90%;
+                left: 15%;
+                height: auto;
+                margin-top: 10%;
+                margin-bottom: 10%;
+            }
+        }
+
+        .user-info {
+            position: absolute;
+            top: 30%;
+
+            .row-grp {
+                left: 4%;
+            }
+        }
+
+        .login-btn-row {
+            text-align: center;
+            padding-bottom: 10%;
+        }
+
+        .login-img {
+            display: none;
+        }
+    }
+}
+

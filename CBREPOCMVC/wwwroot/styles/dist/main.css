@@ -1,0 +1,336 @@
+/* Single source style sheet
+for CBRE Dashboard MVP */
+@font-face {
+  font-family: "futura_hv";
+  src: url("../../assets/fonts/futura-pt-hv.ttf");
+  src: url("../../assets/fonts/futura-pt-hv.ttf") format("truetype");
+}
+@font-face {
+  font-family: "futura-md";
+  src: url("../../assets/fonts/futura-pt-md.ttf");
+  src: url("../../assets/fonts/futura-pt-md.ttf") format("truetype");
+}
+@font-face {
+  font-family: "futura-bk";
+  src: url("../../assets/fonts/futura-pt-bk.ttf");
+  src: url("../../assets/fonts/futura-pt-bk.ttf") format("truetype");
+}
+input:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+}
+
+/*
+ Style Sheet for LOGIN SCREEN 
+*/
+.login-ctn {
+  background-color: #d6e3df;
+}
+.login-ctn .container {
+  position: relative;
+}
+.login-ctn .container .main-row {
+  position: absolute;
+  width: 100%;
+  margin-top: 10%;
+  height: 500px;
+  left: 0%;
+}
+.login-ctn .user-info {
+  background-color: #ffffff;
+  position: relative;
+}
+.login-ctn .user-info .row-grp {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+.login-ctn .cbre-logo-row span:nth-child(1) {
+  font-family: "futura_hv", sans-serif;
+  font-size: 34px;
+  color: #006a4d;
+}
+.login-ctn .cbre-logo-row span:nth-child(2n) {
+  font-family: "futura_md", sans-serif;
+  font-size: 34px;
+  color: #69be28;
+}
+.login-ctn .login-txt-row {
+  font-family: "futura-bk", sans-serif;
+  font-size: 14px;
+  color: #3a3a3a;
+  padding-top: 2%;
+}
+.login-ctn .usr-name-row,
+.login-ctn .usr-pwd-row {
+  padding-top: 50px;
+}
+.login-ctn .usr-name-row div,
+.login-ctn .usr-pwd-row div {
+  border-bottom: 1px solid #979797;
+  height: 30px;
+}
+.login-ctn .usr-name-row .usr-name-input,
+.login-ctn .usr-name-row .usr-pwd-input,
+.login-ctn .usr-pwd-row .usr-name-input,
+.login-ctn .usr-pwd-row .usr-pwd-input {
+  border: none;
+  width: 90%;
+  padding-left: 10px;
+}
+.login-ctn .login-btn-row {
+  padding-top: 50px;
+}
+.login-ctn .login-btn-row .login-btn {
+  height: 56px;
+  color: #ffffff;
+  width: 156px;
+  border-radius: 3px;
+  background: #004b35;
+}
+.login-ctn .login-img {
+  padding-left: 0;
+}
+.login-ctn .login-img img {
+  width: 600px;
+  height: 500px;
+}
+
+/* Tablet Screen Landscape */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .login-ctn .container .main-row {
+    margin-top: 9%;
+    left: -0.5%;
+  }
+  .login-ctn .user-info {
+    position: relative;
+    left: 0%;
+    height: 600px;
+  }
+  .login-ctn .user-info .row-grp {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+  }
+  .login-ctn .login-img img {
+    width: 520px;
+    height: 600px;
+  }
+}
+/* Tablet Screen Portrait */
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait), screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait), (min-width: 801px) and (max-width: 991px) {
+  .login-ctn .container .main-row {
+    position: absolute;
+    margin-top: 2%;
+    height: 500px;
+    left: 2%;
+  }
+  .login-ctn .user-info {
+    position: relative;
+    left: 0%;
+    height: 490px;
+  }
+  .login-ctn .login-img {
+    position: relative;
+    margin-top: 0%;
+  }
+  .login-ctn .login-img img {
+    width: 718px;
+    height: 505px;
+  }
+}
+@media only screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .col-lg-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .col-md-10 {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+
+  .login-ctn .user-info {
+    height: 630px;
+  }
+  .login-ctn .user-info .row-grp {
+    left: 10%;
+  }
+  .login-ctn .login-img img {
+    height: 700px;
+    width: 960px;
+  }
+}
+/* iPhone Mobile Screen Portrait */
+@media screen and (min-width: 100px) and (max-width: 767px) and (orientation: portrait), only screen and (device-width: 375px) and (device-height: 812px) and (orientation: portrait) {
+  .login-ctn {
+    position: relative;
+    background-color: #ffffff;
+    overflow: auto;
+  }
+  .login-ctn .container .main-row {
+    width: 90%;
+    left: 5%;
+  }
+  .login-ctn .user-info {
+    position: absolute;
+    top: 30%;
+  }
+  .login-ctn .user-info .row-grp {
+    left: 4%;
+  }
+  .login-ctn .login-btn-row {
+    text-align: center;
+  }
+  .login-ctn .login-img {
+    display: none;
+  }
+}
+/* iPhone Mobile Screen Landscape */
+@media screen and (min-width: 100px) and (max-width: 767px) and (orientation: landscape), only screen and (device-width: 812px) and (device-height: 375px) and (orientation: landscape) {
+  .login-ctn {
+    position: relative;
+    background-color: #ffffff;
+    overflow: auto;
+  }
+  .login-ctn .container .main-row {
+    width: 90%;
+    left: 15%;
+    height: auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .login-ctn .user-info {
+    position: absolute;
+    top: 30%;
+  }
+  .login-ctn .user-info .row-grp {
+    left: 4%;
+  }
+  .login-ctn .login-btn-row {
+    text-align: center;
+    padding-bottom: 10%;
+  }
+  .login-ctn .login-img {
+    display: none;
+  }
+}
+html, body {
+  height: 100%;
+}
+
+.dashboard-ctn {
+  background-color: #f4f4f4;
+}
+.dashboard-ctn .container {
+  height: 100%;
+  position: relative;
+}
+.dashboard-ctn .panel {
+  width: 335px;
+  height: 100%;
+  background-color: #ffffff;
+}
+.dashboard-ctn .panel .panel-div {
+  height: 100%;
+  padding: 5% 5% 0 10%;
+}
+.dashboard-ctn .cbre-logo-row {
+  margin-top: 14%;
+}
+.dashboard-ctn .cbre-logo-row span:nth-child(1) {
+  font-family: "futura_hv", sans-serif;
+  font-size: 28px;
+  color: #006a4d;
+  font-weight: 900;
+}
+.dashboard-ctn .cbre-logo-row span:nth-child(2n) {
+  font-family: "futura_md", sans-serif;
+  font-size: 28px;
+  color: #69be28;
+  font-weight: 500;
+}
+.dashboard-ctn .user-img-row {
+  margin-top: 15%;
+}
+.dashboard-ctn .user-img-row .user-img {
+  height: 58px;
+  width: 58px;
+}
+.dashboard-ctn .user-name {
+  margin-top: 3%;
+  font-family: "futura-hv", sans-serif;
+  color: #3a3a3a;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.dashboard-ctn .custom-msg {
+  margin-top: 5%;
+  font-family: "futura-bk", sans-serif;
+  color: #3a3a3a;
+  font-size: 18px;
+}
+.dashboard-ctn .panel-links {
+  font-family: "futura-md", sans-serif;
+  color: #3a3a3a;
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-top: 15%;
+}
+.dashboard-ctn .panel-links ul {
+  list-style-type: none;
+  padding-left: 0;
+  cursor: pointer;
+}
+.dashboard-ctn .panel-links ul li {
+  padding-bottom: 5%;
+}
+.dashboard-ctn .panel-links ul li a {
+  text-decoration: none;
+}
+.dashboard-ctn .panel-links ul span {
+  padding-left: 5%;
+}
+.dashboard-ctn .app-info-panel {
+  position: absolute;
+  height: 100%;
+  width: 335px;
+  transition: 1.5s;
+  left: -335px;
+  background-color: #ffffff;
+}
+.dashboard-ctn .app-info-panel .app-info-panel-div {
+  height: 100%;
+  padding: 5% 5% 0 10%;
+}
+.dashboard-ctn .app-info-title {
+  font-family: "futura-hv", sans-serif;
+  font-size: 18px;
+  color: #3a3a3a;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.dashboard-ctn .app-info {
+  font-family: "futura-bk", sans-serif;
+  font-size: 18px;
+  color: #3a3a3a;
+  font-weight: 900;
+  margin-top: 5%;
+}
+.dashboard-ctn .app-info-title {
+  margin-top: 14%;
+}
+.dashboard-ctn .app-list-row ul.app-list {
+  list-style-type: none;
+  padding-left: 0;
+  font-family: "futura-bk", sans-serif;
+  font-size: 18px;
+  color: #3a3a3a;
+  font-weight: normal;
+}
+.dashboard-ctn .app-list-row ul.app-list li {
+  padding: 5% 0 5% 0;
+}
+
+/*# sourceMappingURL=main.css.map */
