@@ -6,19 +6,25 @@ html,body {
 .dashboard-ctn {
     background-color: $off-white;
 
-    .container {
+    .container-fluid {
         height: 100%;
         position: relative;
+        margin-left: 0;
+        padding-left: 0;
+
+        .main-div {
+            height: 100%;
+        }
     }
 
     .panel  {
-        width: 335px;
+        width: 380px;
         height: 100%;
         background-color: $white;
 
         .panel-div {
             height: 100%;
-            padding: 5% 5% 0 10%;
+            padding: 5% 5% 0 12%;
         }
     }
 
@@ -63,6 +69,7 @@ html,body {
         font-family: 'futura-bk', sans-serif;
         color: $cbre-charcoal;
         font-size: 18px;
+        width: 275px;
     }
 
     .panel-links {
@@ -94,14 +101,15 @@ html,body {
     .app-info-panel {
         position: absolute;
         height: 100%;
-        width: 335px;
+        width: 380px;
         transition: 1.5s;
-        left: -335px;
+        left: -380px;
+        top: 0px;
         background-color: $white;
 
         .app-info-panel-div {
             height: 100%;
-            padding: 5% 5% 0 10%;
+            padding: 5% 5% 0 12%;
         }
     }
 
@@ -118,7 +126,8 @@ html,body {
         font-size: 18px;
         color: $cbre-charcoal;
         font-weight: 900;
-        margin-top: 5%;       
+        margin-top: 5%;  
+        width: 289px;     
     }
 
     .app-info-title {
@@ -126,6 +135,10 @@ html,body {
     }
 
     .app-list-row {
+        position: relative;
+        left: -35px;
+        top: 5%;
+
         ul.app-list {
             list-style-type: none;
             padding-left: 0;
@@ -133,10 +146,140 @@ html,body {
             font-size: 18px;
             color: $cbre-charcoal;
             font-weight: normal;
+            width: 370px;
 
             li {
                 padding: 5% 0 5% 0;
+                border-bottom: 1px solid $light-gray;
+                cursor: pointer;
+
+                .app-title {
+                    margin-left: 4%;
+                }
+
+                span {
+                    margin-left: 2%;
+                }
+
+                img.add-img,
+                img.delete-img {
+                    vertical-align: baseline;
+                    cursor: pointer;
+                }
+
+                img.collapse-img {
+                    float: right;
+                    width: 26px;
+                    height: 26px;
+                    vertical-align: baseline;
+                    margin-right: 6%;
+                }
+
+                .app-details {
+                    display: none;
+                    margin-top: 5%;
+                    font-family: "futura-bk", sans-serif;
+                    font-size: 12px;
+                    color: $cbre-charcoal;
+                    line-height: 16px;
+                    width: 82%;
+                    margin-left: 8%;
+
+                    .panel-app-launch {
+                        vertical-align: bottom;
+                        width: 14px;
+                        height: 14px;
+                        padding-left: 1%;
+                    }
+                }
             }
+
+            li:first-child {
+                border-top: 1px solid $light-gray;
+            }
+        }
+    }
+
+    .cbre-dropDown {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+    }
+
+    .app-no-access {
+        color: $cbre-charcoal-opaque;
+    }
+
+    .dashboard-apps {
+
+        .dashboard-apps-row {
+            margin-left: 2%;
+            height: 100%;
+        }
+
+        .app-close {
+            width: 18px;
+            height: 18px;
+            float: right;
+            margin: -10% -10% 0 0;
+            cursor: pointer;
+        }
+
+        .app-tile {
+            background-color: $white;
+            height: 350px;
+            padding: 2% 2% 2% 4%;
+            margin-left: 2%;
+            max-width: 30%;
+            flex: 0 0 30%;
+            // margin-left: 4%;
+            margin-top: 2%;
+
+            .info-icon {
+                margin-left: 4%;
+            }
+
+            figure {
+                margin-top: 15%;
+            }
+
+            figcaption {
+                font-family: "futura-bk", sans-serif;
+                font-size: 12px;
+                line-height: 14px;
+                color: $cbre-charcoal;
+                margin-top: 8%;
+            }
+        }
+
+        .tile-heading {
+            display: inline-block;
+            color: $cbre-charcoal;
+            text-transform: uppercase;
+            font-family: "futura-hv", sans-serif;
+            font-size: 18px;
+            font-weight: 900;
+        }
+
+        .tile-text {
+            display: inline-block;
+            color: $cbre-charcoal;
+            text-transform: capitalize;
+            font-family: "futura-bk", sans-serif;
+            font-size: 18px; 
+        }
+
+        button.launch-app {
+            width: 90px;
+            height: 25px;
+            background-color: $cbre-green;
+            color: $white;
+            text-transform: uppercase;
+            font-family: "futura-md", sans-serif;
+            font-size: 14px;
+            line-height: 15px;
+            margin-top: 8%;
         }
     }
 }

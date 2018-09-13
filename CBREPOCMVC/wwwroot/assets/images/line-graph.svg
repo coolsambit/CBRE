@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="218" height="105" viewBox="0 0 218 105">
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="#006A4D" stroke-dasharray="1,3" stroke-linecap="square" d="M.618 9.5H216.66M.617 34.5h215.818M.617 57.5h215.818M.617 81.5h215.818"/>
+        <path stroke="#006A4D" stroke-dasharray="1" stroke-linecap="square" d="M.617 104.5h215.818"/>
+        <path stroke="#00B2DD" stroke-width="2" d="M23.038 58.023L35.356 45l11.45 6.511 14.156 13.176 11.327-3.43 21.717 3.43h15.423L131.51 77.25l11.297 8.74 14.556-5.43h10.637l12.262 10.39h11.093l11.724-10.39 12.022 10.39"/>
+        <path stroke="#BFD857" stroke-width="2" d="M24.297 37.56l11.116 26.052L47.008 47.78 60.882 37.56h10.512l12.254 13.026 11.266-9.956 13.101-6.385 22.525 19.908 11.333-6.374 25.125 6.374 13.038-3.567 12.667 13.026 11.972 3.2 12.06 7.075"/>
+        <path stroke="#006A4D" stroke-width="2" d="M24.856 24.693l10.43-3.132 24.138 1.566L71.39 29.17l12.333-7.61H106.91l12.718 7.61 13.514 3.408 9.134-5.509 13.341 12.976 10.736 3.243 14.649 15.956 9.867-8.859 12.643 25.208 11.64-10.852"/>
+        <text fill="#006A4D" font-family="FuturaPT-Demi, Futura PT" font-size="9" font-weight="500" letter-spacing="-.44" transform="translate(0 -2)">
+            <tspan x="3.066" y="9">12%</tspan>
+        </text>
+        <text fill="#006A4D" font-family="FuturaPT-Demi, Futura PT" font-size="9" font-weight="500" letter-spacing="-.44" transform="translate(0 -2)">
+            <tspan x="2.864" y="33">10%</tspan>
+        </text>
+        <text fill="#006A4D" font-family="FuturaPT-Demi, Futura PT" font-size="9" font-weight="500" letter-spacing="-.44" transform="translate(0 -2)">
+            <tspan x="4.885" y="56">8%</tspan>
+        </text>
+        <text fill="#006A4D" font-family="FuturaPT-Demi, Futura PT" font-size="9" font-weight="500" letter-spacing="-.44" transform="translate(0 -2)">
+            <tspan x="4.885" y="80">6%</tspan>
+        </text>
+        <text fill="#006A4D" font-family="FuturaPT-Demi, Futura PT" font-size="9" font-weight="500" letter-spacing="-.44" transform="translate(0 -2)">
+            <tspan x="4.885" y="103">4%</tspan>
+        </text>
+        <text fill="#006A4D" font-family="FuturaPT-Demi, Futura PT" font-size="11" font-weight="500" letter-spacing="-.44" transform="translate(0 -2)">
+            <tspan x="152.845" y="28">U</tspan> <tspan x="159.973" y="28">S</tspan>
+        </text>
+        <text fill="#BFD857" font-family="FuturaPT-Demi, Futura PT" font-size="11" font-weight="500" letter-spacing="-.44" transform="translate(0 -2)">
+            <tspan x="176.944" y="28">CA</tspan>
+        </text>
+        <text fill="#00B2DD" font-family="FuturaPT-Demi, Futura PT" font-size="11" font-weight="500" letter-spacing="-.44" transform="translate(0 -2)">
+            <tspan x="201.546" y="28">SD</tspan>
+        </text>
+    </g>
+</svg>

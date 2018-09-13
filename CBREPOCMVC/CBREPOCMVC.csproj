@@ -22,4 +22,31 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\assets\.DS_Store" />
+    <None Include="wwwroot\assets\fonts\.DS_Store" />
+    <None Include="wwwroot\assets\images\.DS_Store" />
+    <None Include="wwwroot\assets\images\app-link.svg" />
+    <None Include="wwwroot\assets\images\arrow-down.svg" />
+    <None Include="wwwroot\assets\images\arrow-up.svg" />
+    <None Include="wwwroot\assets\images\close.svg" />
+    <None Include="wwwroot\assets\images\email.svg" />
+    <None Include="wwwroot\assets\images\info-icon.svg" />
+    <None Include="wwwroot\assets\images\key.svg" />
+    <None Include="wwwroot\assets\images\line-graph.svg" />
+    <None Include="wwwroot\assets\images\minus.svg" />
+    <None Include="wwwroot\assets\images\plus.svg" />
+    <None Include="wwwroot\assets\images\sign-out.svg" />
+    <None Include="wwwroot\libs\.DS_Store" />
+    <None Include="wwwroot\libs\scripts\bootstrap.min.js" />
+    <None Include="wwwroot\libs\scripts\jquery-3.3.1.js" />
+    <None Include="wwwroot\scripts\dashboard.js" />
+    <None Include="wwwroot\scripts\login.js" />
+    <None Include="wwwroot\styles\dist\main.css.map" />
+    <None Include="wwwroot\styles\src\common.scss" />
+    <None Include="wwwroot\styles\src\dashboard.scss" />
+    <None Include="wwwroot\styles\src\login.scss" />
+    <None Include="wwwroot\styles\src\main.scss" />
+  </ItemGroup>
+
 </Project>
