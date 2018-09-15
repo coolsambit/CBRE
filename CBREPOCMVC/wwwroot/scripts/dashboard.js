@@ -61,5 +61,18 @@
             }
         });
     });
+    
+    //Sort items in the app list
+     $('.dashboard-apps-row').sortable({
+         revert: true,
+         scroll: false
+     });
+
+     $('.app-tile').draggable({
+        connectToSortable: ".dashboard-apps-row",
+        revert: "invalid"
+     });
+
+     $('.dashboard-apps-row').disableSelection();
 
 })();

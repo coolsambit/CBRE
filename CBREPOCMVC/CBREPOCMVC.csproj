@@ -16,6 +16,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+    <PackageReference Include="WindowsAzure.Storage" Version="9.1.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -47,6 +48,10 @@
     <None Include="wwwroot\styles\src\dashboard.scss" />
     <None Include="wwwroot\styles\src\login.scss" />
     <None Include="wwwroot\styles\src\main.scss" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>
